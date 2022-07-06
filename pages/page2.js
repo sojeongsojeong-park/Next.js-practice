@@ -7,10 +7,10 @@ const ImageWrapper = styled.div`
   height: 100vh;
 `;
 
-export default function Home() {
+export default function Page2() {
   return (
     <ImageWrapper>
-      <Image src='/images/cover.jpg' layout='fill' alt='cover' />
+      <Image src='/images/cover2.jpg' layout='fill' alt='cover' />
     </ImageWrapper>
   );
 }
