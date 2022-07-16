@@ -2,29 +2,32 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const ImageWrapper = styled.div`
-  position: relative;
   width: 100vw;
   height: 100vh;
 `;
 const TextWrapper = styled.div`
-  width: 200px;
-  height: 100px;
-  position: absolute;
-  top: calc(50vh - 50px);
-  left: calc(50vw - 100px);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 99;
+`;
+
+const Title = styled.h1`
+  color: white;
+  fontsize: 60px;
 `;
 
 export default function Page1() {
   return (
     <div>
       <TextWrapper>
-        <h1 style={{ color: "white", textAlign: "center", fontSize: "60px" }}>
-          page 1
-        </h1>
+        <Title>page 3</Title>
       </TextWrapper>
       <ImageWrapper>
-        <Image src='/images/cover.jpg' layout='fill' alt='cover' />
+        <Image src='/images/cover3.jpg' layout='fill' alt='cover' />
       </ImageWrapper>
     </div>
   );
